@@ -17,11 +17,11 @@ public final class Factories {
 
     public static Map<Object, Object> getFactories() {
         Map<Object, Object> factories = new HashMap<>();
-        factories.put(GraphicsName.ELLIPSE, EllipseFactory.getInstance());
-        factories.put(GraphicsName.RECTANGLE, RectangleFactory.getInstance());
-        factories.put(GraphicsName.SHAPE, ShapeFactory.getInstance());
-        factories.put(GraphicsName.TRIANGLE, TriangleFactory.getInstance());
-        factories.put(GraphicsName.LALALA, LalalaFactory.getInstance());
+        factories.put(FactoriesName.ELLIPSE, EllipseFactory.getInstance());
+        factories.put(FactoriesName.RECTANGLE, RectangleFactory.getInstance());
+        factories.put(FactoriesName.SHAPE, ShapeFactory.getInstance());
+        factories.put(FactoriesName.TRIANGLE, TriangleFactory.getInstance());
+        factories.put(FactoriesName.LALALA, LalalaFactory.getInstance());
         return factories;
     }
 }
