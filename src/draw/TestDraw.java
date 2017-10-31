@@ -8,15 +8,9 @@ import draw.lalala.LalalaFactory;
  */
 public class TestDraw {
     public static void main(String[] args) {
-        LalalaFactory lalalaFactory = getFactory(FactoriesName.LALALA);
+        LalalaFactory lalalaFactory = Draw.getFactory(FactoriesName.LALALA);
         Lalala lalala = lalalaFactory.createGraphic();
         lalala.area();
         lalala.volume();
-    }
-
-    @SuppressWarnings("unchecked")
-    private static <T> T getFactory(Object key) {
-        final Object value = Factories.getFactories().get(key);
-        return (T) value;
     }
 }
