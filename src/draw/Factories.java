@@ -12,7 +12,8 @@ import java.util.Map;
 /**
  * Created by Hu on 2017/10/31.
  */
-public class Factories {
+@SuppressWarnings("WeakerAccess")
+public final class Factories {
 
     public static Map<Object, Object> getFactories() {
         Map<Object, Object> factories = new HashMap<>();
