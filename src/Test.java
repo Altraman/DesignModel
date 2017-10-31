@@ -3,7 +3,11 @@
  */
 public class Test {
     public static void main(String[] args) {
-        JpgReaderFactory.getInstance().createReader();
-        GifReaderFactory.getInstance().createReader();
+        JpgReader jpgReader = JpgReaderFactory.getInstance().createReader();
+        GifReader gifReader = GifReaderFactory.getInstance().createReader();
+        jpgReader.startRead();
+        jpgReader.endRead();
+        gifReader.startRead();
+        gifReader.endRead();
     }
 }

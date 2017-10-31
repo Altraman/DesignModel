@@ -7,6 +7,7 @@ public class JpgReaderFactory extends ImageReaderFactory<JpgReader> {
         private static final JpgReaderFactory INSTANCE = new JpgReaderFactory();
     }
 
+    @SuppressWarnings("WeakerAccess")
     public static JpgReaderFactory getInstance() {
         return Holder.INSTANCE;
     }
