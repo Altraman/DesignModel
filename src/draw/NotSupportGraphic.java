@@ -6,12 +6,20 @@ package draw;
 public class NotSupportGraphic extends Graphics {
 
     @Override
-    public void area() {
-        throw new RuntimeException("该图形不能计算面积");
+    public void area(){
+        try {
+            throw new UnsupportedShapeException("该图形不能计算面积");
+        } catch (UnsupportedShapeException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
-    public void volume() {
-        throw new RuntimeException("该图形不能计算体积");
+    public void volume(){
+        try {
+            throw new UnsupportedShapeException("该图形不能计算体积");
+        } catch (UnsupportedShapeException e) {
+            e.printStackTrace();
+        }
     }
 }
