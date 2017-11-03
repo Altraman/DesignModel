@@ -1,4 +1,4 @@
-package draw.ellipse;
+package draw.circle;
 
 import draw.Graphics;
 import draw.ICalculateListener;
@@ -6,10 +6,11 @@ import draw.ICalculateListener;
 /**
  * Created by Hu on 2017/10/31.
  */
-public class Ellipse extends Graphics {
+public class Circle extends Graphics {
+
     private final ICalculateListener listener;
 
-    public Ellipse(ICalculateListener listener) {
+    public Circle(ICalculateListener listener) {
         this.listener = listener;
     }
 

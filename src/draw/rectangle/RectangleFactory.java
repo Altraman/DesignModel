@@ -1,11 +1,13 @@
 package draw.rectangle;
 
-import draw.GraphicFactory;
+import draw.ICalculateListener;
+import draw.ShapeFactory;
+import draw.UnsupportedShapeException;
 
 /**
  * Created by Hu on 2017/10/31.
  */
-public class RectangleFactory extends GraphicFactory<Rectangle> {
+public class RectangleFactory extends ShapeFactory<Rectangle> {
     private static final class Holder {
         private static final RectangleFactory INSTANCE = new RectangleFactory();
     }
@@ -16,6 +18,27 @@ public class RectangleFactory extends GraphicFactory<Rectangle> {
 
     @Override
     public Rectangle createGraphic() {
-        return new Rectangle();
+        initListener();
+        return new Rectangle(mListener);
+    }
+
+    @Override
+    protected void initListener() {
+        mListener = new ICalculateListener() {
+            @Override
+            public void calculateArea() {
+                System.out.println("矩形的面积");
+            }
+
+            @Override
+            public void calculateVolume() {
+                System.out.println("矩形的体积");
+            }
+
+            @Override
+            public void calculateWrong() throws UnsupportedShapeException {
+
+            }
+        };
     }
 }

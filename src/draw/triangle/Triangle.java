@@ -1,18 +1,25 @@
 package draw.triangle;
 
 import draw.Graphics;
+import draw.ICalculateListener;
 
 /**
  * Created by Hu on 2017/10/31.
  */
 public class Triangle extends Graphics {
+    private final ICalculateListener listener;
+
+    public Triangle(ICalculateListener listener) {
+        this.listener = listener;
+    }
+
     @Override
     public void area() {
-        System.out.println("三角形的面积");
+        listener.calculateArea();
     }
 
     @Override
     public void volume() {
-        System.out.println("三角形的体积");
+        listener.calculateVolume();
     }
 }
