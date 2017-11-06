@@ -7,19 +7,19 @@ import draw.UnsupportedShapeException;
 /**
  * Created by Hu on 2017/10/31.
  */
-public class LalalaFactory extends ShapeFactory<Lalala> {
+public class WrongShapeFactory extends ShapeFactory<WrongShape> {
     private static final class Holder {
-        private static final LalalaFactory INSTANCE = new LalalaFactory();
+        private static final WrongShapeFactory INSTANCE = new WrongShapeFactory();
     }
 
-    public static LalalaFactory getInstance() {
+    public static WrongShapeFactory getInstance() {
         return Holder.INSTANCE;
     }
 
     @Override
-    public Lalala createGraphic() {
+    public WrongShape createGraphic() {
         initListener();
-        return new Lalala(mListener);
+        return new WrongShape(mListener);
     }
 
     @Override

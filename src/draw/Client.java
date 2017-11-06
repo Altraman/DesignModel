@@ -1,13 +1,13 @@
 package draw;
 
-import draw.lalala.LalalaFactory;
+import draw.lalala.WrongShapeFactory;
 
 /**
  * Created by Hu on 2017/10/31.
  */
-public class TestDraw {
+public class Client {
     public static void main(String[] args) {
-        Graphics graphics = LalalaFactory.getInstance().createGraphic();
+        Graphics graphics = WrongShapeFactory.getInstance().createGraphic();
         try {
             graphics.area();
             graphics.volume();

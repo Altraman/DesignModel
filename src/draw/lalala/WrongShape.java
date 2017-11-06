@@ -7,10 +7,10 @@ import draw.UnsupportedShapeException;
 /**
  * Created by Hu on 2017/10/31.
  */
-public class Lalala extends Graphics {
+public class WrongShape extends Graphics {
     private final ICalculateListener listener;
 
-    public Lalala(ICalculateListener listener) {
+    public WrongShape(ICalculateListener listener) {
         this.listener = listener;
     }
 
