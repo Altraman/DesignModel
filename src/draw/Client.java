@@ -1,5 +1,6 @@
 package draw;
 
+import draw.circle.CircleFactory;
 import draw.lalala.WrongShapeFactory;
 
 /**
@@ -7,7 +8,7 @@ import draw.lalala.WrongShapeFactory;
  */
 public class Client {
     public static void main(String[] args) {
-        Graphics graphics = WrongShapeFactory.getInstance().createGraphic();
+        Graphics graphics = CircleFactory.getInstance().createGraphic();
         try {
             graphics.area();
             graphics.volume();
