@@ -3,7 +3,7 @@ package adapter;
 /**
  * Created by HuQiang on 2017/11/30.
  */
-public class BinarySearch {
+public final class BinarySearch {
     public int binarySearch(int[] array, int key) {
         int low = 0;
         int high = array.length - 1;
