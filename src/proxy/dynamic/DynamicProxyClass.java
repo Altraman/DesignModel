@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 
 /**
  * Created by HuQiang on 2017/12/19.
+ * 代理类的调用处理器
  */
 public class DynamicProxyClass implements InvocationHandler {
     private Object mObject;

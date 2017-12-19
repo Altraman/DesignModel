@@ -2,6 +2,7 @@ package proxy.dynamic;
 
 /**
  * Created by HuQiang on 2017/12/19.
+ * 委托类
  */
 public class DynamicServer implements DynamicCalculate {
     private float mA;
