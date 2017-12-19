@@ -1,4 +1,4 @@
-package proxy.remote;
+package proxy.remote.rmi;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
