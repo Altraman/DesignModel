@@ -4,7 +4,7 @@ package proxy.dynamic;
  * Created by HuQiang on 2017/12/19.
  * 委托类
  */
-public class DynamicServer implements DynamicCalculate {
+public class DynamicServer implements IDynamicCalculate {
     private float mA;
     private float mB;
 

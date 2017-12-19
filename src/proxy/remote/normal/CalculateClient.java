@@ -6,7 +6,7 @@ package proxy.remote.normal;
 public class CalculateClient {
     public static void main(String[] args) {
         try {
-            final Calculate calculate = new CalculateStub();
+            final ICalculate calculate = new CalculateStub();
             final float addResult = calculate.add();
             final float subResult = calculate.sub();
             final float mulResult = calculate.mul();

@@ -3,7 +3,7 @@ package proxy.remote.normal;
 /**
  * Created by HuQiang on 2017/12/19.
  */
-public class CalculateServer implements Calculate {
+public class CalculateServer implements ICalculate {
 
     private float mA;
     private float mB;

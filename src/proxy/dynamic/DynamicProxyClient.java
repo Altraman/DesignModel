@@ -8,9 +8,9 @@ import java.lang.reflect.Proxy;
  */
 public class DynamicProxyClient {
     public static void main(String[] args) {
-        final DynamicCalculate server = new DynamicServer(1f, 2f);
+        final IDynamicCalculate server = new DynamicServer(1f, 2f);
         final InvocationHandler handler = new DynamicProxyClass(server);
-        final DynamicCalculate dynamicServer = (DynamicCalculate) Proxy.newProxyInstance(
+        final IDynamicCalculate dynamicServer = (IDynamicCalculate) Proxy.newProxyInstance(
                 handler.getClass().getClassLoader(), server.getClass().getInterfaces(), handler);
         final float addResult = dynamicServer.add();
         final float subResult = dynamicServer.sub();

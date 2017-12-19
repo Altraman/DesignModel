@@ -7,7 +7,7 @@ import java.net.Socket;
 /**
  * Created by HuQiang on 2017/12/19.
  */
-public class CalculateStub implements Calculate {
+public class CalculateStub implements ICalculate {
     private Socket mSocket;
 
     public CalculateStub() throws Throwable {

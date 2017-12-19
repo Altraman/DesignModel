@@ -3,7 +3,7 @@ package proxy.remote.normal;
 /**
  * Created by HuQiang on 2017/12/19.
  */
-public interface Calculate {
+public interface ICalculate {
     float add() throws Throwable;
 
     float sub() throws Throwable;
