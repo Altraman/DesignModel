@@ -3,7 +3,7 @@ package adapter;
 /**
  * Created by HuQiang on 2017/11/30.
  */
-public final class QuickSort {
+public class QuickSort {
     public final int[] quickSort(int[] array) {
         sort(array, 0, array.length - 1);
         return array;
