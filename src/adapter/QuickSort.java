@@ -6,7 +6,6 @@ package adapter;
 public class QuickSort {
     public final int[] quickSort(int[] array) {
         sort(array, 0, array.length - 1);
-        System.out.println("1111");
         return array;
     }
 
