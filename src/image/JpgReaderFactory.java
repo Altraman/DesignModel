@@ -1,3 +1,5 @@
+package image;
+
 /**
  * Created by Hu on 2017/10/31.
  */
@@ -7,6 +9,7 @@ public class JpgReaderFactory extends ImageReaderFactory<JpgReader> {
         private static final JpgReaderFactory INSTANCE = new JpgReaderFactory();
     }
 
+    @SuppressWarnings("WeakerAccess")
     public static JpgReaderFactory getInstance() {
         return Holder.INSTANCE;
     }

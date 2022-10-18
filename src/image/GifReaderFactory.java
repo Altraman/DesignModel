@@ -1,3 +1,5 @@
+package image;
+
 /**
  * Created by Hu on 2017/10/31.
  */
@@ -8,6 +10,7 @@ public class GifReaderFactory extends ImageReaderFactory<GifReader> {
         private static final GifReaderFactory INSTANCE = new GifReaderFactory();
     }
 
+    @SuppressWarnings("WeakerAccess")
     public static GifReaderFactory getInstance() {
         return Holder.INSTANCE;
     }
