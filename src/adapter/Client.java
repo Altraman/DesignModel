@@ -16,7 +16,6 @@ public class Client {
         result = operation.sort(array);
         for (int i : result) {
             System.out.print(i + ",");
-            System.out.println("11111");
         }
         System.out.println();
 
